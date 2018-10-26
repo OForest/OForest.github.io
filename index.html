@@ -12,26 +12,22 @@
     #welcome{text-align: left; color: #333;font-size: 20px; font-weight: 700;line-height: 1.2; letter-spacing: -.4px;}
     #welcome{font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto Oxygen-Sans", Ubuntu, Cantarell, "“Fira Sans”", "“Droid Sans”", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";}
     
-    body, html { Height: 100%;}
-    .bg { 
-    /* The image used */
-    background-image: url("https://images.pexels.com/photos/6663/desk-white-black-header.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-
-    /* Full height */
-    height: 100%; 
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    }
+   body{height:100%;
+   width:100%;
+   background-image:url(https://images.pexels.com/photos/5836/yellow-metal-design-decoration.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);/*your background image*/  
+   background-repeat:no-repeat;/*we want to have one single image not a repeated one*/  
+   background-size:cover;/*this sets the image to fullscreen covering the whole screen*/  
+   /*css hack for ie*/     
+   filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.image.jpg',sizingMethod='scale');
+   -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://images.pexels.com/photos/5836/yellow-metal-design-decoration.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',sizingMethod='scale')";
+}
     
   </style>
   <body>
     <h1 id="title1"> O'Forest Webdesign </h1>
-    <h2 id="welcome"> Hi, There! <br>
-    Have a look... 
-    </h2>
+    <h2 id="welcome"> Hi, There!</h2> <br>
+    <h2 id="welcome"> Have a look... </h2>
+    
     
       <p>
     
